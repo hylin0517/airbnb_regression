@@ -2,7 +2,7 @@
 
 A portfolio-style data science project for predicting Airbnb listing prices from historical Inside Airbnb listings data.
 
-This repository is set up as a clean foundation for iterative work. Reusable Python code will live in `src/`, and analysis notebooks will live in `notebooks/`.
+This repository is intentionally notebook-focused. Data loading, audit work, exploration, modeling, interpretation, and final deliverables are all handled directly in Jupyter notebooks.
 
 ## Project Structure
 
@@ -11,16 +11,10 @@ This repository is set up as a clean foundation for iterative work. Reusable Pyt
 ├── README.md
 ├── environment.yml
 ├── data/
-│   ├── raw/
-│   │   └── listings.csv
-│   └── processed/
-├── models/
+│   └── listings.csv
 ├── notebooks/
-├── reports/
-│   └── figures/
-└── src/
-    ├── __init__.py
-    └── config.py
+│   ├── 01_data_audit.ipynb
+│   └── 02_eda.ipynb
 ```
 
 ## Setup
@@ -35,7 +29,6 @@ jupyter lab
 
 ## Workflow
 
-- Raw data lives in `data/raw/`.
-- Intermediate datasets can be written to `data/processed/`.
-- Reusable project code lives in `src/`.
-- Future notebooks will be added incrementally for audit, EDA, modeling, and reporting.
+- The dataset lives in `data/listings.csv`.
+- Notebook paths are kept simple and explicit for easier use in VS Code Jupyter.
+- All analysis work is meant to stay in notebooks instead of being split across a Python package.
