@@ -8,5 +8,6 @@ dependencies:
   - matplotlib
   - seaborn
   - scikit-learn
+  - xgboost
   - jupyterlab
   - ipykernel
